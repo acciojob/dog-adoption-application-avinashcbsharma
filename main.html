@@ -3,11 +3,42 @@
 <html>
 
 <head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+    
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
+	<form method="post">
+        <label for="name">Name * </label>
+        <input id="name" name="" type="text" placeholder="Name" required><br>
+       
+        <label for="phone">Phone * </label>
+        <input id="phone" name="phone" type="text" placeholder="Phone Number" required><br>
+
+        <label for="address">Address</label>
+        <input id="address" type="text" placeholder="Address"><br>
+
+        <label class="sdog" type="checkbox">Have you ever lived with a Dog before?</label><br>
+        <label for="yn">Yes</label>
+        <input id="yn`" name="yn" type="checkbox" required>
+        <label for="yn">some time</label>
+        <input id="yn`" name="yn" type="checkbox" required>
+        <label for="yn">Never</label>
+        <input id="yn" name="yn" type="checkbox" required><br>
+        <label class="sdog" for="multiSelect">Please select your preferred breeds</label><br>
+        <select id="multiSelect" name="dogbreed">
+            <option value="German Shepherd">German Shepherd</option>
+            <option value="Dachshund.">Dachshund.</option>
+            <option value="Samoyed">Samoyed</option>
+            <option value="Pomeranian">Pomeranian</option>
+        </select><br>        
+        
+        <br><button name="Submit" type="submit">Submit </button>
+
+    </form>
     <script type="text/javascript" src="./script.js">
 </script>
 
